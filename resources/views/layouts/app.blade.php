@@ -274,7 +274,8 @@
 
             <div class="logo">
                 <a href="{{ route('home.index') }}">
-                    <img src="{{ asset('assets/images/logo.png') }}" alt="Uomo" class="logo__image d-block" />
+                    {{-- <img src="{{ asset('assets/images/logo.png') }}" alt="Uomo" class="logo__image d-block" /> --}}
+                    <h2 class="logo__image d-block text-bold"><span style="color: rgb(228, 29, 122);">E-Comm</span><span style="color: rgb(44, 94, 170)">-Online</span></h2>
                 </a>
             </div>
 
@@ -399,8 +400,9 @@
             <div class="header-desk header-desk_type_1">
                 <div class="logo">
                     <a href="{{ route('home.index') }}">
-                        <img src="{{ asset('assets/images/logo.png') }}" alt="Uomo"
-                            class="logo__image d-block" />
+                        {{-- <img src="{{ asset('assets/images/logo.png') }}" alt="Uomo"
+                            class="logo__image d-block" /> --}}
+                            <h2 class="logo__image d-block text-bold"><span style="color: rgb(228, 29, 122);">E-Comm</span><span style="color: rgb(44, 94, 170)">-Online</span></h2>
                     </a>
                 </div>
 
@@ -536,12 +538,13 @@
                 <div class="footer-column footer-store-info col-12 mb-4 mb-lg-0">
                     <div class="logo">
                         <a href="{{ route('home.index') }}">
-                            <img src="{{ asset('assets/images/logo.png') }}" alt="SurfsideMedia"
-                                class="logo__image d-block" />
+                            {{-- <img src="{{ asset('assets/images/logo.png') }}" alt="SurfsideMedia"
+                                class="logo__image d-block" /> --}}
+                                <h2 class="text-bold"><span style="color: rgb(228, 29, 122);">E-Comm</span><span style="color: rgb(44, 94, 170)">-Online</span></h2>
                         </a>
                     </div>
-                    <p class="footer-address">123 Beach Avenue, Surfside City, CA 00000</p>
-                    <p class="m-0"><strong class="fw-medium">contact@surfsidemedia.in</strong></p>
+                    <p class="footer-address">F244 Mayur Vihar, New Delhi, IN 110091</p>
+                    <p class="m-0"><strong class="fw-medium">contact@santosh.in</strong></p>
                     <p><strong class="fw-medium">+1 000-000-0000</strong></p>
 
                     <ul class="social-links list-unstyled d-flex flex-wrap mb-0">

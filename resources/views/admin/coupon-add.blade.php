@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="wg-box">
-                <form class="form-new-product form-style-1" method="POST" action="">
+                <form class="form-new-product form-style-1" method="POST" action="{{route('admin.coupon.store')}}">
                     @csrf
                     <fieldset class="name">
                         <div class="body-title">Coupon Code <span class="tf-color-1">*</span></div>

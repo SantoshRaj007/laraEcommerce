@@ -40,8 +40,9 @@
                 <div class="section-menu-left">
                     <div class="box-logo">
                         <a href="{{ route('admin.index')}}" id="site-logo-inner">
-                            <img class="" id="logo_header" alt="" src="{{asset('images/logo/logo.png')}}"
-                                data-light="{{asset('images/logo/logo.png')}}" data-dark="{{asset('images/logo/logo.png')}}">
+                            {{-- <img class="" id="logo_header" alt="" src="{{asset('images/logo/logo.png')}}"
+                                data-light="{{asset('images/logo/logo.png')}}" data-dark="{{asset('images/logo/logo.png')}}"> --}}
+                            <h5 class="logo__image d-block text-bold"><span style="color: rgb(228, 29, 122);">E-Comm</span><span style="color: rgb(44, 94, 170)">-Online</span></h5>
                         </a>
                         <div class="button-show-hide">
                             <i class="icon-menu-left"></i>
@@ -123,7 +124,7 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="orders.html" class="">
+                                            <a href="{{route('admin.orders')}}" class="">
                                                 <div class="text">Orders</div>
                                             </a>
                                         </li>
@@ -179,10 +180,12 @@
                     <div class="header-dashboard">
                         <div class="wrap">
                             <div class="header-left">
-                                <a href="index-2.html">
-                                    <img class="" id="logo_header_mobile" alt="" src="{{asset('images/logo/logo.png')}}"
+                                <a href="{{route('admin.index')}}">
+                                    {{-- <img class="" id="logo_header_mobile" alt="" src="{{asset('images/logo/logo.png')}}"
                                         data-light="{{asset('images/logo/logo.png')}}" data-dark="{{asset('images/logo/logo.png')}}"
-                                        data-width="154px" data-height="52px" data-retina="{{asset('images/logo/logo.png')}}">
+                                        data-width="154px" data-height="52px" data-retina="{{asset('images/logo/logo.png')}}"> --}}
+                                    <h5 class="logo__image d-block text-bold"><span style="color: rgb(228, 29, 122);">E-Comm</span><span style="color: rgb(44, 94, 170)">-Online</span></h5>
+
                                 </a>
                                 <div class="button-show-hide">
                                     <i class="icon-menu-left"></i>
