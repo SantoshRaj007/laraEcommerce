@@ -7,6 +7,7 @@
         --bs-table-accent-bg: #fff !important;
     }
 </style>
+<div class="main-content-inner">
     <div class="main-content-wrap">
         <div class="flex items-center flex-wrap justify-between gap20 mb-27">
             <h3>Order Details</h3>
@@ -204,4 +205,5 @@
 
 
     </div>
+</div>
 @endsection

@@ -6,6 +6,7 @@ use App\Models\Brand;
 use App\Models\Contact;
 use App\Models\Order;
 use App\Models\OrderItem;
+use App\Models\Product;
 use App\Models\Slide;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
@@ -188,5 +189,17 @@ class AdminController extends Controller
     public function contacts() {
         $contacts = Contact::orderBy('created_at','DESC')->paginate(10);
         return view('admin.contacts',compact('contacts'));
+    }
+
+    public function contact_delete($id) {
+        $contact = Contact::find($id);
+        $contact->delete();
+        return redirect()->route('admin.contacts')->with('status','Contact Deleted Successfully!');
+    }
+
+    public function search(Request $request) {
+        $query = $request->input('query');
+        $results = Product::where('name','LIKE',"%{$query}%")->get()->take(8);
+        return response()->json($results);
     }
 }
